@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/edo_beauty_salon/static/css/main.392eb65a.css",
+    "main.js": "/edo_beauty_salon/static/js/main.371ff32b.js",
+    "static/js/787.be0f631c.chunk.js": "/edo_beauty_salon/static/js/787.be0f631c.chunk.js",
+    "static/media/8.jpg": "/edo_beauty_salon/static/media/8.1257f9c414f9e26e4459.jpg",
+    "static/media/2.jpg": "/edo_beauty_salon/static/media/2.e6ed7bba3a86afe5bdf3.jpg",
+    "static/media/7.jpg": "/edo_beauty_salon/static/media/7.1afa09f05baf8fc38263.jpg",
+    "static/media/6.jpg": "/edo_beauty_salon/static/media/6.363b87903d6d172e12e2.jpg",
+    "static/media/3.jpg": "/edo_beauty_salon/static/media/3.90f1cffbee2f566726af.jpg",
+    "static/media/5.jpg": "/edo_beauty_salon/static/media/5.30f8114210c83fcb7fc6.jpg",
+    "static/media/4.jpg": "/edo_beauty_salon/static/media/4.72ef563d5adf402366f6.jpg",
+    "static/media/9.jpg": "/edo_beauty_salon/static/media/9.c6c4711ed9dbf4336b70.jpg",
+    "static/media/1.jpg": "/edo_beauty_salon/static/media/1.a75651ca98cfe43394b4.jpg",
+    "static/media/10.jpg": "/edo_beauty_salon/static/media/10.3b1afeb443c0cd4c6100.jpg",
+    "static/media/barber-min.jpg": "/edo_beauty_salon/static/media/barber-min.275127d789f1bae8a3b4.jpg",
+    "static/media/FiraSans-Bold.ttf": "/edo_beauty_salon/static/media/FiraSans-Bold.b2c1d356b236acbad8ef.ttf",
+    "static/media/FiraSans-Medium.ttf": "/edo_beauty_salon/static/media/FiraSans-Medium.d11d9e14e00fc1a96751.ttf",
+    "static/media/cosmetholog-min.jpg": "/edo_beauty_salon/static/media/cosmetholog-min.f6028c624e86b4d9053e.jpg",
+    "static/media/Quicksand-Bold.ttf": "/edo_beauty_salon/static/media/Quicksand-Bold.a0a11318dd0b528da77d.ttf",
+    "static/media/manicure-min.jpg": "/edo_beauty_salon/static/media/manicure-min.f7996b7da08641d01cc9.jpg",
+    "static/media/logo.png": "/edo_beauty_salon/static/media/logo.faaf809213b967d1a167.png",
+    "index.html": "/edo_beauty_salon/index.html",
+    "main.392eb65a.css.map": "/edo_beauty_salon/static/css/main.392eb65a.css.map",
+    "main.371ff32b.js.map": "/edo_beauty_salon/static/js/main.371ff32b.js.map",
+    "787.be0f631c.chunk.js.map": "/edo_beauty_salon/static/js/787.be0f631c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.392eb65a.css",
+    "static/js/main.371ff32b.js"
+  ]
+}
