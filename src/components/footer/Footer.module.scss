@@ -1,0 +1,29 @@
+.container_fw {
+    height: var(--header-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &::after {
+        content: '';
+        height: var(--header-size);
+        z-index: -1;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        background-color: var(--black);
+    }
+    & div {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        &:first-child {
+            justify-content: flex-start;
+        }
+        &:last-child {
+            justify-content: flex-end;
+        }
+    }
+    & p {
+        color: var(--white);
+    }
+}

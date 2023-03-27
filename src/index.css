@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+    font-family: FiraSans;
+    src: url("./assets/fonts/Quicksand/Quicksand-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: FiraSans;
+    src: url("./assets/fonts/FiraSans/FiraSans-Medium.ttf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: FiraSansBold;
+    src: url("./assets/fonts/FiraSans/FiraSans-Bold.ttf");
+    font-weight: bold;
+}

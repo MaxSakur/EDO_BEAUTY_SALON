@@ -1,0 +1,22 @@
+.aboutLayout {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    height: calc(100vh - calc(var(--header-size)*3));
+
+    .row {
+        display: flex;
+        height: 100%;
+        flex: 1;
+        gap: var(--padding-sm);
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & .logo {
+            height: 25vh;
+            width: auto;
+            object-fit: contain;
+        }
+    }
+
+}

@@ -1,0 +1,10 @@
+.carouser_header {
+  font-size: var(--default);
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: var(--padding-md);
+  margin-bottom: var(--padding-xl);
+}
+
+.slide p {
+  font-size: var(--comment);
+}

@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    height: calc(calc(100vh - calc(var(--header-size)*3)) + var(--padding-sm));
+    gap: var(--padding-sm);
+
+}
+
+@keyframes example {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 50px
+    }
+}
+
+.centerColumn {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-xl);
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 var(--padding-xl);
+        align-items: center;
+        height: 50px;
+        list-style-type: none;
+        border-top: 1px solid var(--lightgrey);
+        animation-name: example;
+        animation-duration: 1s;
+
+        &:last-child {
+            border-bottom: 1px solid var(--lightgrey);
+        }
+
+        & .name {}
+
+        & .price {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+    }
+}

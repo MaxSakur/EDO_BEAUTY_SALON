@@ -1,0 +1,4 @@
+.container {
+    height: calc(100vh - calc(var(--header-size)*3));
+    width: 100%;
+}
