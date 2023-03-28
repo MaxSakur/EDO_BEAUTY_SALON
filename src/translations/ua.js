@@ -47,7 +47,7 @@ export const UA_TRANSLATION_KEYS = {
     label: "Перейти",
   },
   interier: {
-    title: "Інтер'єр",
+    title: "Галерея",
   },
   contacts: {
     title: "Попередній запис:",

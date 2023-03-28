@@ -26,7 +26,7 @@ p {
   --box_header: 14px;
   --comment: 18px;
   --default: 24px;
-  --label: 32px;
+  --label: 1.5em;
 
   /* PADDINGS */
   --padding-sm: 4px;

@@ -9,6 +9,7 @@ import { BsScissors } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import Contacts from "../../components/contacts";
 import SliderModal from "../../components/sliderModal";
+import Column from "../../components/column";
 
 export default function About() {
   const { t } = useTranslation();
@@ -28,20 +29,16 @@ export default function About() {
 
   return (
     <div className={styles.aboutLayout} ref={targetRef}>
-      <div className={styles.row}>
+      <Column>
         <Box
           size={dimensions.height / 2}
           isTemplate={true}
-          bg={images.bg.locationBG}
-          label={t("location.title")}
-          text={t("location.label")}
-          icon={<FaSearchLocation />}
-          externalLink={t("info.googleMapPath")}
+          bg={images.bg.serviceBG}
+          label={t("services.title")}
+          text={t("services.label")}
+          icon={<BsScissors />}
+          onClick={() => navigate("../services")}
         />
-
-        <Box size={dimensions.height / 2}>
-          <img className={styles.logo} src={images.logo} alt="logo" />
-        </Box>
 
         <Box
           size={dimensions.height / 2}
@@ -52,7 +49,18 @@ export default function About() {
           icon={<FaShoppingBag />}
           onClick={() => navigate("../shop")}
         />
+      </Column>
 
+      <div className={styles.center_container}>
+        <Box size={dimensions.height / 2}>
+          <img className={styles.logo} src={images.logo} alt="logo" />
+        </Box>
+        <Box size={dimensions.height / 2}>
+          <Contacts />
+        </Box>
+      </div>
+
+      <Column>
         <Box
           size={dimensions.height / 2}
           isTemplate={true}
@@ -62,21 +70,16 @@ export default function About() {
           icon={<FaCamera />}
           onClick={() => setSliderModalShown(true)}
         />
-
-        <Box size={dimensions.height / 2}>
-          <Contacts />
-        </Box>
-
         <Box
           size={dimensions.height / 2}
           isTemplate={true}
-          bg={images.bg.serviceBG}
-          label={t("services.title")}
-          text={t("services.label")}
-          icon={<BsScissors />}
-          onClick={() => navigate("../services")}
+          bg={images.bg.locationBG}
+          label={t("location.title")}
+          text={t("location.label")}
+          icon={<FaSearchLocation />}
+          externalLink={t("info.googleMapPath")}
         />
-      </div>
+      </Column>
 
       <SliderModal
         isShown={sliderModalShown}
