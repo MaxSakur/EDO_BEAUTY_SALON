@@ -26,6 +26,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<MainUI />}>
+          <Route index path="EDO_BEAUTY_SALON" element={<About />} />
           <Route index path="/" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="shop" element={<Shop />} />
