@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EDO_BEAUTY_SALON/static/css/main.3d74795a.css",
-    "main.js": "/EDO_BEAUTY_SALON/static/js/main.4d130fa4.js",
+    "main.js": "/EDO_BEAUTY_SALON/static/js/main.3f4078ee.js",
     "static/js/787.be0f631c.chunk.js": "/EDO_BEAUTY_SALON/static/js/787.be0f631c.chunk.js",
     "static/media/7-min.jpg": "/EDO_BEAUTY_SALON/static/media/7-min.2d7f3bb23f69c1536f3d.jpg",
     "static/media/6-min.jpg": "/EDO_BEAUTY_SALON/static/media/6-min.6a3f0c213b3c3fccfb17.jpg",
@@ -27,11 +27,11 @@
     "static/media/logo.png": "/EDO_BEAUTY_SALON/static/media/logo.faaf809213b967d1a167.png",
     "index.html": "/EDO_BEAUTY_SALON/index.html",
     "main.3d74795a.css.map": "/EDO_BEAUTY_SALON/static/css/main.3d74795a.css.map",
-    "main.4d130fa4.js.map": "/EDO_BEAUTY_SALON/static/js/main.4d130fa4.js.map",
+    "main.3f4078ee.js.map": "/EDO_BEAUTY_SALON/static/js/main.3f4078ee.js.map",
     "787.be0f631c.chunk.js.map": "/EDO_BEAUTY_SALON/static/js/787.be0f631c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d74795a.css",
-    "static/js/main.4d130fa4.js"
+    "static/js/main.3f4078ee.js"
   ]
 }
