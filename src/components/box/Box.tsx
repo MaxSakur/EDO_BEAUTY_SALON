@@ -1,43 +1,42 @@
-import React, { MouseEventHandler, ReactElement } from "react";
+import React, { MouseEventHandler, ReactElement, CSSProperties } from "react";
 import styles from "./Box.module.css";
 import { DefaultTFuncReturn } from "i18next";
 
-const WorkingHours = ({
-  bg,
-  size,
-  isDoubled = false,
-  onClick,
-  label,
-  text,
-  icon,
-  isTemplate = false,
-  externalLink,
-  children,
-}: {
-  bg?: string;
-  size: number;
-  isDoubled?: boolean;
+type BoxTypes = {
+  bg?: string,
+  size: number,
+  color?: CSSProperties['color'],
   onClick?: MouseEventHandler<HTMLDivElement>;
   label?: string | DefaultTFuncReturn;
   text?: string | DefaultTFuncReturn;
   icon?: ReactElement;
   isTemplate?: boolean;
   externalLink?: string | DefaultTFuncReturn;
-  children?: ReactElement;
-}) => {
-  const boxSizeStyles = {
-    height: `${size}px`,
-    width: `${isDoubled ? size * 2 : size}px`,
-  };
+  content?: ReactElement;
+}
+
+const WorkingHours = ({
+  bg,
+  size,
+  color,
+  onClick,
+  label,
+  text,
+  icon,
+  isTemplate = false,
+  externalLink,
+  content,
+}: BoxTypes) => {
+  const boxStyles = { minWidth: size, maxWidth: size * 2, height: size, backgroundColor: color }
 
   return isTemplate ? (
-    <div className={styles.block} style={boxSizeStyles} onClick={onClick}>
+    <div className={styles.block} onClick={onClick} style={boxStyles}>
       <div className={styles.bg} style={{ backgroundImage: `url(${bg})` }} />
       <div className={styles.overlay} />
       {icon && <div className={styles.icon}>{icon}</div>}
       <div className={styles.content}>
-        <div className={styles.label}>{label}</div>
         <div className={styles.text}>{text}</div>
+        <div className={styles.label}>{label}</div>
         {externalLink && (
           <a
             className={styles.externalLink}
@@ -45,15 +44,15 @@ const WorkingHours = ({
             target="_blank"
             href={externalLink}
           >
-            {}
+            { }
           </a>
         )}
       </div>
     </div>
   ) : (
-    <div className={styles.block_empty} style={boxSizeStyles}>
-      {children}
-    </div>
+    <div className={styles.block_custom} style={boxStyles}>
+      {content}
+    </div >
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { ReactElement, useLayoutEffect, useRef, useState } from "react";
-import Box from "../../components/workingHours";
+import Box from "../../components/box";
 import backToMainBG from "./../../assets/images/bg/1.jpg";
 import barberBG from "./../../assets/images/bg/barber-min.jpg";
 import cosmetologBG from "./../../assets/images/bg/cosmetholog-min.jpg";
@@ -45,7 +45,7 @@ export default function Services() {
     >
       <Column>
         <Box
-          size={dimensions.height / 2}
+          size={1}
           isTemplate={true}
           bg={backToMainBG}
           label={t("main.title")}
@@ -54,7 +54,7 @@ export default function Services() {
           onClick={() => navigate("/")}
         />
         <Box
-          size={dimensions.height / 2}
+          size={1}
           isTemplate={true}
           bg={barberBG}
           label={t("barber.title")}
@@ -77,7 +77,7 @@ export default function Services() {
 
       <Column>
         <Box
-          size={dimensions.height / 2}
+          size={1}
           isTemplate={true}
           bg={manicureBG}
           label={t("maniPediCure.title")}
@@ -91,7 +91,7 @@ export default function Services() {
           onClick={() => setServicesData(maniPediCure)}
         />
         <Box
-          size={dimensions.height / 2}
+          size={1}
           isTemplate={true}
           bg={cosmetologBG}
           label={t("cosmetic.title")}

@@ -1,55 +1,46 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  & svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+  }
+  & .box_header {
+    font-size: var(--box_header);
+    border-bottom: 1px solid var(--accent-color);
+    padding: var(--padding-md) 0;
+    margin-bottom: var(--padding-xl);
+  }
+
+  & .phones_container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
     align-items: center;
 
-    & .box_header {
-        font-size: var(--box_header);
-        border-bottom: 1px solid var(--accent-color);
-        padding: var(--padding-md) 0;
-        margin-bottom: var(--padding-xl);
-    }
+    & .phones {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
-    & .phones_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      & a {
+        text-decoration: none;
+        color: var(--comment);
+        font-weight: 500;
 
-        & .phones {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-
-            & a {
-                text-decoration: none;
-                color: var(--comment);
-                font-weight: 500;
-
-                & .phone {
-                    font-size: var(--comment);
-                }
-            }
+        & .phone {
+          font-size: var(--comment);
         }
+      }
     }
+  }
 
-    & .socials_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        & .contact_icons {
-            display: flex;
-            gap: var(--padding-xl);
-
-            & a svg {
-                height: calc(var(--icon-size)*2);
-                width: calc(var(--icon-size)*2);
-            }
-        }
-    }
-
-
+  & .contact_icons {
+    padding-top: calc(var(--padding-xl) * 2);
+    display: flex;
+    gap: var(--padding-xl);
+  }
 }

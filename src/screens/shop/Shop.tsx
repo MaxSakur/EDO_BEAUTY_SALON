@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import styles from "./Shop.module.css";
-import Box from "../../components/workingHours";
+import Box from "../../components/box";
 import locationBG from "./../../assets/images/bg/6.jpg";
 import { FaSearchLocation } from "react-icons/fa";
 
@@ -24,7 +24,7 @@ export default function Shop() {
   return (
     <div className={styles.container} ref={targetRef}>
       <Box
-        size={dimensions.height / 2}
+        size={1}
         isTemplate={true}
         bg={locationBG}
         label={t("main.title")}

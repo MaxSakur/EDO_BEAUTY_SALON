@@ -1,4 +1,4 @@
 .container {
-  height: calc(100vh - calc(var(--header-size)*3));
+  height: calc(100vh - var(--header-size) * 3);
   width: 100%;
-}
+}/*# sourceMappingURL=BodyContainer.module.css.map */

@@ -1,6 +1,4 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - calc(var(--header-size)*3));
-}
+  height: calc(100vh - var(--header-size) * 3);
+}/*# sourceMappingURL=Shop.module.css.map */

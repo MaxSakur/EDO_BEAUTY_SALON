@@ -1,18 +1,7 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  height: calc(calc(100vh - calc(var(--header-size)*3)) + var(--padding-sm));
+  height: calc(100vh - var(--header-size) * 3 + var(--padding-sm));
   gap: var(--padding-sm);
-}
-
-@-webkit-keyframes example {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 50px;
-  }
 }
 
 @keyframes example {
@@ -23,49 +12,28 @@
     height: 50px;
   }
 }
-
 .centerColumn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
+  justify-content: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: var(--padding-xl);
 }
-
 .centerColumn li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 var(--padding-xl);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 50px;
   list-style-type: none;
   border-top: 1px solid var(--lightgrey);
-  -webkit-animation-name: example;
-          animation-name: example;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: example;
+  animation-duration: 1s;
 }
-
 .centerColumn li:last-child {
   border-bottom: 1px solid var(--lightgrey);
 }
-
 .centerColumn li .price {
   color: var(--accent-color);
   font-weight: 600;
-}
+}/*# sourceMappingURL=Services.module.css.map */

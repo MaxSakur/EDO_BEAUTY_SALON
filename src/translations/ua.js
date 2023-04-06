@@ -48,11 +48,16 @@ export const UA_TRANSLATION_KEYS = {
   },
   interier: {
     title: "Галерея",
+    label: "Подивитись",
+  },
+  brand: {
+    since: "Since 1998",
   },
   contacts: {
     title: "Попередній запис:",
     label: "Через застосунок",
-    phoneMain: "+38 (044) 461 9988",
-    phoneAlternate: "+38 (067) 233 7966",
+    phone1: "+38 (067) 233 7966",
+    phone2: "+38 (044) 461 9988",
+    phone3: "+38 (044) 461 9988",
   },
 };

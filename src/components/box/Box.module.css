@@ -1,0 +1,116 @@
+.block, .block_custom {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  width: calc(33.3333333333% - 24px);
+}
+.block .externalLink, .block_custom .externalLink {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.block .bg, .block_custom .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: 50%;
+  background-color: #cccccc;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+.block .overlay, .block_custom .overlay {
+  border: 4px solid transparent;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.block .icon, .block_custom .icon {
+  position: absolute;
+  padding: var(--padding-md);
+  border-radius: 100%;
+  z-index: 3;
+  top: calc(50% + var(--icon-size));
+  transition: all 0.5s ease-in-out;
+}
+.block .icon svg, .block_custom .icon svg {
+  fill: var(--white);
+  height: var(--icon-size);
+  width: var(--icon-size);
+}
+.block .content, .block_custom .content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.block .content .text, .block_custom .content .text {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  top: calc(50% - var(--label));
+  transition: all 0.5s ease-in-out;
+  font-size: var(--label);
+  text-align: center;
+}
+.block .content .label, .block_custom .content .label {
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  flex-direction: column;
+  font-size: 22px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  bottom: -50%;
+}
+.block:hover .overlay, .block_custom:hover .overlay {
+  border-color: var(--accent-color);
+}
+.block:hover > .bg, .block_custom:hover > .bg {
+  transform: scale(1.1);
+}
+.block:hover > .overlay, .block_custom:hover > .overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.block:hover > .content .text, .block_custom:hover > .content .text {
+  top: 20px;
+}
+.block:hover > .content .label, .block_custom:hover > .content .label {
+  bottom: 5%;
+}
+.block:hover > .icon, .block_custom:hover > .icon {
+  top: calc(50% - var(--icon-size));
+  border-color: var(--accent-color);
+}
+.block:hover > .icon svg, .block_custom:hover > .icon svg {
+  fill: var(--accent-color);
+}
+
+.block_custom {
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Box.module.css.map */

@@ -1,82 +1,41 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
+.container svg {
+  height: var(--icon-size);
+  width: var(--icon-size);
+}
 .container .box_header {
   font-size: var(--box_header);
   border-bottom: 1px solid var(--accent-color);
   padding: var(--padding-md) 0;
   margin-bottom: var(--padding-xl);
 }
-
 .container .phones_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .container .phones_container .phones {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
 }
-
 .container .phones_container .phones a {
   text-decoration: none;
   color: var(--comment);
   font-weight: 500;
 }
-
 .container .phones_container .phones a .phone {
   font-size: var(--comment);
 }
-
-.container .socials_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container .socials_container .contact_icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.container .contact_icons {
+  padding-top: calc(var(--padding-xl) * 2);
   display: flex;
   gap: var(--padding-xl);
-}
-
-.container .socials_container .contact_icons a svg {
-  height: calc(var(--icon-size)*2);
-  width: calc(var(--icon-size)*2);
-}
+}/*# sourceMappingURL=Contacts.module.css.map */

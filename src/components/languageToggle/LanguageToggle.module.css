@@ -1,27 +1,22 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  gap: calc(var(--padding-xl)*2);
+  gap: calc(var(--padding-xl) * 2);
 }
 
 .lang, .lang_active {
   color: var(--white);
   opacity: 1;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   border-bottom: 1px solid transparent;
   font-size: 24px;
   text-transform: uppercase;
 }
-
 .lang:hover, .lang_active:hover {
   cursor: pointer;
   color: var(--accent-color);
   opacity: 0.6;
 }
-
 .lang_active {
   opacity: 1;
   color: var(--accent-color);
-}
+}/*# sourceMappingURL=LanguageToggle.module.css.map */

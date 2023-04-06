@@ -15,7 +15,7 @@ const SliderModal = (props: SliderModalType): null | JSX.Element => {
   const [servicesData, setServicesData] = useState();
 
   const { isShown, onExit } = props;
-  console.log("isShown2", interierImages);
+  // console.log("isShown2", interierImages);
   //   console.log("isShown", Array.from(interierImages));
   return isShown ? (
     <>

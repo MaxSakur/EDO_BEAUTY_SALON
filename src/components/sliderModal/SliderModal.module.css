@@ -9,20 +9,13 @@
   right: 25px;
   top: 25px;
   border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #000;
   z-index: 11;
   cursor: pointer;
 }
-
 .closeButton:hover svg {
   fill: var(--accent-color);
-}
+}/*# sourceMappingURL=SliderModal.module.css.map */

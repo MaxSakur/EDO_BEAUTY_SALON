@@ -1,17 +1,11 @@
 .container_fw {
   height: var(--header-size);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
-
 .container_fw::after {
-  content: '';
+  content: "";
   height: var(--header-size);
   z-index: -1;
   left: 0;
@@ -19,31 +13,17 @@
   position: absolute;
   background-color: var(--black);
 }
-
 .container_fw div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 1;
+  justify-content: center;
 }
-
 .container_fw div:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 .container_fw div:last-child {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .container_fw p {
   color: var(--white);
-}
+}/*# sourceMappingURL=Footer.module.css.map */
