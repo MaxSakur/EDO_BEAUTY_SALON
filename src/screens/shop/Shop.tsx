@@ -23,14 +23,14 @@ export default function Shop() {
 
   return (
     <div className={styles.container} ref={targetRef}>
-      <Box
+      {/* <Box
         size={1}
         isTemplate={true}
         bg={locationBG}
         label={t("main.title")}
         icon={<FaSearchLocation />}
         onClick={() => navigate("/")}
-      />
+      /> */}
     </div>
   );
 }

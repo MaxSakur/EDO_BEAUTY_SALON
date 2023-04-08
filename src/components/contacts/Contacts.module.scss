@@ -5,15 +5,16 @@
   height: 100%;
   width: 100%;
   align-items: center;
+
+  & .icon {
+    padding-bottom: var(--padding-xl);
+    & svg path {
+      fill: #fff;
+    }
+  }
   & svg {
     height: var(--icon-size);
     width: var(--icon-size);
-  }
-  & .box_header {
-    font-size: var(--box_header);
-    border-bottom: 1px solid var(--accent-color);
-    padding: var(--padding-md) 0;
-    margin-bottom: var(--padding-xl);
   }
 
   & .phones_container {
@@ -25,6 +26,8 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      border-bottom: 1px solid var(--accent-color);
+      padding-bottom: var(--padding-xl);
 
       & a {
         text-decoration: none;
@@ -39,7 +42,7 @@
   }
 
   & .contact_icons {
-    padding-top: calc(var(--padding-xl) * 2);
+    padding-top: var(--padding-xl);
     display: flex;
     gap: var(--padding-xl);
   }

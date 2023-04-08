@@ -2,6 +2,7 @@
 const currentYear = new Date().getFullYear();
 
 export const UA_TRANSLATION_KEYS = {
+  currency: "грн",
   pages: {
     about: "про нас",
     services: "послуги",
@@ -21,29 +22,27 @@ export const UA_TRANSLATION_KEYS = {
   location: {
     title: "Як дістатись",
     label: "Прокласти маршрут",
+    address: "Печерский район, вул. Василя Тютюнника 22/26",
+    workHours: "09:00 - 21:00",
   },
   shop: {
     title: "Магазин",
     label: "Перейти",
   },
   barber: {
-    title: "Послуги перукарнi",
+    title: "Волосся",
     label: "Переглянути",
   },
   maniPediCure: {
-    title: "Манiкюр / Педикюр",
+    title: "Нігтьовий сервіс",
     label: "Переглянути",
   },
   cosmetic: {
-    title: "Косметолог",
+    title: "Косметологія",
     label: "Переглянути",
   },
   services: {
     title: "Послуги",
-    label: "Перейти",
-  },
-  comments: {
-    title: "Відгуки",
     label: "Перейти",
   },
   interier: {
@@ -55,9 +54,7 @@ export const UA_TRANSLATION_KEYS = {
   },
   contacts: {
     title: "Попередній запис:",
-    label: "Через застосунок",
     phone1: "+38 (067) 233 7966",
     phone2: "+38 (044) 461 9988",
-    phone3: "+38 (044) 461 9988",
   },
 };

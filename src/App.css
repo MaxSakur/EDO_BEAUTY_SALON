@@ -1,7 +1,13 @@
-body {
-  font-family: FiraSans;
+* {
+  font-family: Comfortaa;
 }
-
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
 p {
   margin: 0;
   padding: 0;

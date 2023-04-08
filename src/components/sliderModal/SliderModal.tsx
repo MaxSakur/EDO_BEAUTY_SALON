@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { memo } from "react";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
@@ -12,11 +12,7 @@ type SliderModalType = {
 };
 
 const SliderModal = (props: SliderModalType): null | JSX.Element => {
-  const [servicesData, setServicesData] = useState();
-
   const { isShown, onExit } = props;
-  // console.log("isShown2", interierImages);
-  //   console.log("isShown", Array.from(interierImages));
   return isShown ? (
     <>
       <AwesomeSlider
@@ -24,6 +20,7 @@ const SliderModal = (props: SliderModalType): null | JSX.Element => {
         animation="cubeAnimation"
         className={styles.container}
         fillParent={true}
+
       >
         {interierImages.map((el: string): JSX.Element => {
           return <div data-src={el} />;

@@ -26,4 +26,8 @@
 }
 .container_fw p {
   color: var(--white);
+}
+.container_fw .email {
+  color: var(--white);
+  text-decoration: none;
 }/*# sourceMappingURL=Footer.module.css.map */

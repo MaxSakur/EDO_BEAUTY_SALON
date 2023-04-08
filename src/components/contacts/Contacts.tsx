@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTelegram, FaViber } from "react-icons/fa";
-import { GrLocation } from "react-icons/gr";
+import { GiRotaryPhone } from "react-icons/gi";
 import styles from "./Contacts.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -8,9 +8,12 @@ const Contacts = () => {
   const { t } = useTranslation();
   return (
     <div className={styles.container}>
+
       <div className={styles.phones_container}>
 
-        <GrLocation color="#fff" />
+        <div className={styles.icon}>
+          <GiRotaryPhone color="#fff" />
+        </div>
 
         <div className={styles.phones}>
           <a href="tel:contacts.phoneMain">

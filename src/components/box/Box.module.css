@@ -9,7 +9,6 @@
   cursor: pointer;
   box-sizing: border-box;
   color: #fff;
-  width: calc(33.3333333333% - 24px);
 }
 .block .externalLink, .block_custom .externalLink {
   position: absolute;

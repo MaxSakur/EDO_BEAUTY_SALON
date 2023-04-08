@@ -1,21 +1,22 @@
-Caveat Variable Font
-====================
+Comfortaa Variable Font
+=======================
 
-This download contains Caveat as both a variable font and static fonts.
+This download contains Comfortaa as both a variable font and static fonts.
 
-Caveat is a variable font with this axis:
+Comfortaa is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  Caveat-VariableFont_wght.ttf
+  Comfortaa-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Caveat:
-  static/Caveat-Regular.ttf
-  static/Caveat-Medium.ttf
-  static/Caveat-SemiBold.ttf
-  static/Caveat-Bold.ttf
+in those cases you can use the static font files for Comfortaa:
+  static/Comfortaa-Light.ttf
+  static/Comfortaa-Regular.ttf
+  static/Comfortaa-Medium.ttf
+  static/Comfortaa-SemiBold.ttf
+  static/Comfortaa-Bold.ttf
 
 Get started
 -----------

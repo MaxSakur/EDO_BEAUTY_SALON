@@ -7,7 +7,7 @@ export const Footer: FC = () => {
   return (
     <div className={styles.container_fw}>
       <div>
-        <p className={styles.location}>{t("footer.address")}</p>
+        <a className={styles.email} href={`mailto: ${t("footer.email")}`}>{t("footer.email")}</a>
       </div>
       <div>
         <p className={styles.copyright}>{t("footer.copyright")}</p>

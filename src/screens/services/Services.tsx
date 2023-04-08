@@ -1,105 +1,45 @@
-import React, { ReactElement, useLayoutEffect, useRef, useState } from "react";
+import React, { useState, ReactElement, MouseEventHandler } from "react";
+import { useTranslation } from "react-i18next";
+import styles from "./Services.module.css";
 import Box from "../../components/box";
 import backToMainBG from "./../../assets/images/bg/1.jpg";
-import barberBG from "./../../assets/images/bg/barber-min.jpg";
-import cosmetologBG from "./../../assets/images/bg/cosmetholog-min.jpg";
-import manicureBG from "./../../assets/images/bg/manicure-min.jpg";
-import barberList from "./../../static_data/barber.json";
-import maniPediCure from "./../../static_data/maniPediCure.json";
-import cosmethology from "./../../static_data/cosmethology.json";
-import { useTranslation } from "react-i18next";
 import { FaHome } from "react-icons/fa";
-import { GiBarefoot, GiHand } from "react-icons/gi";
-import { BiFace } from "react-icons/bi";
-import { BsScissors } from "react-icons/bs";
-import styles from "./Services.module.css";
 import { useNavigate } from "react-router-dom";
-import Column from "../../components/column";
+import barberList from "./../../static_data/barber.json";
+import { Service, ServiceLinks, ServicePrice } from "./serviceUtils";
 
-type Service = {
-  name: string;
-  price: number;
-};
 
 export default function Services() {
   const { t } = useTranslation();
-  const targetRef = useRef<HTMLInputElement>(null);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const navigate = useNavigate();
   const [servicesData, setServicesData] = useState<Service[]>(barberList);
 
-  useLayoutEffect(() => {
-    if (targetRef.current) {
-      setDimensions({
-        width: targetRef.current.offsetWidth,
-        height: targetRef.current.offsetHeight,
-      });
-    }
-  }, [targetRef]);
+  const data = [
+    { isTemplate: true, text: "main.title", label: 'main.label', bg: backToMainBG, icon: <FaHome />, onclick: () => navigate("../"), content: null },
+    { isTemplate: false, text: "", label: '', bg: '', content: < ServicePrice data={servicesData} /> },
+    { isTemplate: false, text: "location.title", label: 'location.label', color: '#000', content: <ServiceLinks onChange={setServicesData} /> }
+  ]
 
   return (
-    <div
-      className={styles.container}
-      // style={{ width: dimensions.height }}
-      ref={targetRef}
-    >
-      <Column>
-        <Box
-          size={1}
-          isTemplate={true}
-          bg={backToMainBG}
-          label={t("main.title")}
-          text={t("shop.label")}
-          icon={<FaHome />}
-          onClick={() => navigate("/")}
-        />
-        <Box
-          size={1}
-          isTemplate={true}
-          bg={barberBG}
-          label={t("barber.title")}
-          text={t("barber.label")}
-          icon={<BsScissors />}
-          onClick={() => setServicesData(barberList)}
-        />
-      </Column>
-
-      <div className={styles.centerColumn}>
-        {servicesData.map((el, index): ReactElement => {
+    <div className={styles.serviceLayout}>
+      <div className={styles.boxContainer} >
+        {data.map((el, index) => {
           return (
-            <li key={index}>
-              <p className={styles.name}>{el.name}</p>
-              <p className={styles.price}>{el.price}</p>
-            </li>
-          );
+            <Box
+              key={index}
+              isTemplate={el.isTemplate}
+              text={t(el.text)}
+              label={t(el.label)}
+              bg={el.bg}
+              color={el.color}
+              icon={el.icon as ReactElement}
+              onClick={el.onclick as MouseEventHandler<HTMLDivElement>}
+              content={el.content as ReactElement}
+            />
+          )
         })}
       </div>
 
-      <Column>
-        <Box
-          size={1}
-          isTemplate={true}
-          bg={manicureBG}
-          label={t("maniPediCure.title")}
-          text={t("maniPediCure.label")}
-          icon={
-            <div>
-              <GiBarefoot />
-              <GiHand />
-            </div>
-          }
-          onClick={() => setServicesData(maniPediCure)}
-        />
-        <Box
-          size={1}
-          isTemplate={true}
-          bg={cosmetologBG}
-          label={t("cosmetic.title")}
-          text={t("cosmetic.label")}
-          icon={<BiFace />}
-          onClick={() => setServicesData(cosmethology)}
-        />
-      </Column>
     </div>
   );
 }

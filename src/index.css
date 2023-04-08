@@ -13,8 +13,8 @@ code {
 }
 
 @font-face {
-  font-family: Caveat;
-  src: url("./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf");
+  font-family: Comfortaa;
+  src: url("./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
   font-weight: normal;
 }
 
@@ -26,18 +26,6 @@ code {
 
 @font-face {
   font-family: FiraSans;
-  src: url("./assets/fonts/Quicksand/Quicksand-Bold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: FiraSans;
   src: url("./assets/fonts/FiraSans/FiraSans-Medium.ttf");
   font-weight: medium;
-}
-
-@font-face {
-  font-family: FiraSansBold;
-  src: url("./assets/fonts/FiraSans/FiraSans-Bold.ttf");
-  font-weight: bold;
 }

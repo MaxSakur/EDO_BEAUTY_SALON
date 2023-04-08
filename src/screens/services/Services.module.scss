@@ -1,47 +1,76 @@
-.container {
-    display: flex;
-    height: calc(calc(100vh - calc(var(--header-size)*3)) + var(--padding-sm));
-    gap: var(--padding-sm);
-
-}
-
-@keyframes example {
-    from {
-        height: 0px;
+.serviceLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  gap: 0 var(--padding-md);
+  height: 100%;
+  & .boxContainer {
+    display: grid;
+    gap: var(--padding-md);
+    height: inherit;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "A B B" "C B B";
+    & > div {
+      &:nth-child(1) {
+        grid-area: A;
+      }
+      &:nth-child(3) {
+        grid-area: C;
+      }
+      &:nth-child(2) {
+        grid-area: B;
+      }
     }
+  }
 
-    to {
-        height: 50px
+  & .priceHeader {
+    padding: calc(var(--padding-xl) * 1.5) calc(var(--padding-xl));
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    margin-bottom: var(--padding-xl);
+    & .title {
+      color: var(--white);
+      font-size: var(--label);
     }
-}
-
-.centerColumn {
-    flex: 1;
-    justify-content: center;
+  }
+  & .prices {
     display: flex;
     flex-direction: column;
-    padding: var(--padding-xl);
+    height: 100%;
+    width: 100%;
 
-    li {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 var(--padding-xl);
-        align-items: center;
-        height: 50px;
-        list-style-type: none;
-        border-top: 1px solid var(--lightgrey);
-        animation-name: example;
-        animation-duration: 1s;
-
-        &:last-child {
-            border-bottom: 1px solid var(--lightgrey);
-        }
-
-        & .name {}
-
-        & .price {
-            color: var(--accent-color);
-            font-weight: 600;
-        }
+    & .price {
+      display: flex;
+      color: var(--black);
+      padding: var(--padding-md) var(--padding-xl);
+      border-bottom: 1px solid var(--lightgrey);
+      justify-content: space-between;
+      &:last-child {
+        border-bottom: none;
+      }
     }
+  }
+
+  & .links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-xl);
+    & .link {
+      &_text {
+        font-size: 24px;
+      }
+      &_active {
+        color: var(--accent-color);
+      }
+    }
+  }
 }

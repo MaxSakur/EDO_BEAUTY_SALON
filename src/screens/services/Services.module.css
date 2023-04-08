@@ -1,39 +1,64 @@
-.container {
+.serviceLayout {
   display: flex;
-  height: calc(100vh - var(--header-size) * 3 + var(--padding-sm));
-  gap: var(--padding-sm);
-}
-
-@keyframes example {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 50px;
-  }
-}
-.centerColumn {
-  flex: 1;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  gap: 0 var(--padding-md);
+  height: 100%;
+}
+.serviceLayout .boxContainer {
+  display: grid;
+  gap: var(--padding-md);
+  height: inherit;
+  width: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "A B B" "C B B";
+}
+.serviceLayout .boxContainer > div:nth-child(1) {
+  grid-area: A;
+}
+.serviceLayout .boxContainer > div:nth-child(3) {
+  grid-area: C;
+}
+.serviceLayout .boxContainer > div:nth-child(2) {
+  grid-area: B;
+}
+.serviceLayout .priceHeader {
+  padding: calc(var(--padding-xl) * 1.5) calc(var(--padding-xl));
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0.5) 40%, rgb(255, 255, 255) 100%);
+  margin-bottom: var(--padding-xl);
+}
+.serviceLayout .priceHeader .title {
+  color: var(--white);
+  font-size: var(--label);
+}
+.serviceLayout .prices {
   display: flex;
   flex-direction: column;
-  padding: var(--padding-xl);
+  height: 100%;
+  width: 100%;
 }
-.centerColumn li {
+.serviceLayout .prices .price {
   display: flex;
-  justify-content: space-between;
-  padding: 0 var(--padding-xl);
-  align-items: center;
-  height: 50px;
-  list-style-type: none;
-  border-top: 1px solid var(--lightgrey);
-  animation-name: example;
-  animation-duration: 1s;
-}
-.centerColumn li:last-child {
+  color: var(--black);
+  padding: var(--padding-md) var(--padding-xl);
   border-bottom: 1px solid var(--lightgrey);
+  justify-content: space-between;
 }
-.centerColumn li .price {
+.serviceLayout .prices .price:last-child {
+  border-bottom: none;
+}
+.serviceLayout .links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-xl);
+}
+.serviceLayout .links .link_text {
+  font-size: 24px;
+}
+.serviceLayout .links .link_active {
   color: var(--accent-color);
-  font-weight: 600;
 }/*# sourceMappingURL=Services.module.css.map */

@@ -1,0 +1,26 @@
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--padding-xl);
+  & .icon {
+    & svg {
+      height: var(--icon-size);
+      width: var(--icon-size);
+      & path {
+        fill: #fff;
+      }
+    }
+  }
+  & .address {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: var(--padding-xl);
+  }
+  & p {
+    font-size: var(--comment);
+    font-weight: 200;
+  }
+}

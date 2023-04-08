@@ -7,7 +7,6 @@ import image6 from "./6-min.jpg";
 import image7 from "./7-min.jpg";
 import image8 from "./8-min.jpg";
 import image9 from "./9-min.jpg";
-import image10 from "./10-min.jpg";
 
 export const interierImages = [
   image1,
@@ -19,5 +18,4 @@ export const interierImages = [
   image7,
   image8,
   image9,
-  image10,
 ];

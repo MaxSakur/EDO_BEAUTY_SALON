@@ -7,10 +7,11 @@
   gap: 0 var(--padding-md);
   height: 100%;
   & .boxContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     gap: var(--padding-md);
+    height: inherit;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(33%, auto));
+    grid-template-rows: repeat(2, 1fr);
   }
 }

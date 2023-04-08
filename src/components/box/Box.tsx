@@ -4,7 +4,6 @@ import { DefaultTFuncReturn } from "i18next";
 
 type BoxTypes = {
   bg?: string,
-  size: number,
   color?: CSSProperties['color'],
   onClick?: MouseEventHandler<HTMLDivElement>;
   label?: string | DefaultTFuncReturn;
@@ -17,7 +16,6 @@ type BoxTypes = {
 
 const WorkingHours = ({
   bg,
-  size,
   color,
   onClick,
   label,
@@ -27,7 +25,7 @@ const WorkingHours = ({
   externalLink,
   content,
 }: BoxTypes) => {
-  const boxStyles = { minWidth: size, maxWidth: size * 2, height: size, backgroundColor: color }
+  const boxStyles = { backgroundColor: color }
 
   return isTemplate ? (
     <div className={styles.block} onClick={onClick} style={boxStyles}>
