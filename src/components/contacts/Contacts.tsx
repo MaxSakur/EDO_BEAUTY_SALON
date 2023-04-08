@@ -11,16 +11,15 @@ const Contacts = () => {
 
       <div className={styles.phones_container}>
 
-        <div className={styles.icon}>
-          <GiRotaryPhone color="#fff" />
-        </div>
-
         <div className={styles.phones}>
           <a href="tel:contacts.phoneMain">
             <p className={styles.phone}>{t("contacts.phone1")}</p>
           </a>
           <a href="tel:contacts.phoneAlternate">
             <p className={styles.phone}>{t("contacts.phone2")}</p>
+          </a>
+          <a href="tel:contacts.phoneAlternate">
+            <p className={styles.phone}>{t("contacts.phone3")}</p>
           </a>
         </div>
 

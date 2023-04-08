@@ -8,9 +8,6 @@ const Location = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.icon}>
-                <GrLocation />
-            </div>
 
             <div className={styles.address}>
                 <p>{t('location.address')}</p>

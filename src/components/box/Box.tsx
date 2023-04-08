@@ -2,6 +2,7 @@ import React, { MouseEventHandler, ReactElement, CSSProperties } from "react";
 import styles from "./Box.module.css";
 import { DefaultTFuncReturn } from "i18next";
 
+
 type BoxTypes = {
   bg?: string,
   color?: CSSProperties['color'],
@@ -10,7 +11,7 @@ type BoxTypes = {
   text?: string | DefaultTFuncReturn;
   icon?: ReactElement;
   isTemplate?: boolean;
-  externalLink?: string | DefaultTFuncReturn;
+  externalLink?: string;
   content?: ReactElement;
 }
 
@@ -26,7 +27,6 @@ const WorkingHours = ({
   content,
 }: BoxTypes) => {
   const boxStyles = { backgroundColor: color }
-
   return isTemplate ? (
     <div className={styles.block} onClick={onClick} style={boxStyles}>
       <div className={styles.bg} style={{ backgroundImage: `url(${bg})` }} />

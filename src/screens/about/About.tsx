@@ -21,7 +21,7 @@ export default function About() {
   const data = [
     { isTemplate: true, text: "services.title", label: 'services.label', bg: images.bg.serviceBG, icon: <BsScissors />, onclick: () => navigate("../services"), content: null },
     { isTemplate: false, text: "", label: '', content: <Brand /> },
-    { isTemplate: true, text: "location.title", label: 'location.label', bg: images.bg.locationBG, icon: <FaSearchLocation />, externalLink: ("info.googleMapPath"), content: null },
+    { isTemplate: true, text: "location.title", label: 'location.label', bg: images.bg.locationBG, icon: <FaSearchLocation />, externalLink: "https://www.google.com/maps?saddr=My+Location&daddr=50.425399,30.522494", content: null },
     { isTemplate: false, text: "", label: '', color: '#000', content: <Contacts /> },
     { isTemplate: true, text: "interier.title", label: 'interier.label', bg: interierBG, icon: <FaCamera />, onclick: () => setSliderModalShown(true), content: null },
     { isTemplate: false, text: "", label: '', color: '#000', content: <Location /> },

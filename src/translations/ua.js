@@ -12,10 +12,6 @@ export const UA_TRANSLATION_KEYS = {
     address: "03150, Київ, вул. Василя Тютюнника 22/26",
     copyright: `@1998 - ${currentYear} EDO Company`,
   },
-  info: {
-    googleMapPath:
-      "https://www.google.com/maps?saddr=My+Location&daddr=50.425399,30.522494",
-  },
   main: {
     title: "На головну",
   },
@@ -55,6 +51,7 @@ export const UA_TRANSLATION_KEYS = {
   contacts: {
     title: "Попередній запис:",
     phone1: "+38 (067) 233 7966",
-    phone2: "+38 (044) 461 9988",
+    phone2: "+38 (068) 461 9988",
+    phone3: "+38 (044) 461 9988",
   },
 };
