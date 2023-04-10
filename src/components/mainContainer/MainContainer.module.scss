@@ -1,24 +1,13 @@
 .container {
-   display: flex;
-   flex-direction: column;
-   flex: 1;
-   height: 100vh;
-   overflow: hidden;
-   justify-content: space-between;
-   margin: auto;
-}
-
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
-    .container {
-        width: 1200px;
-    }
-}
-
-// /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .container {
-        width: 1200px;
-    }
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: auto;
+  &_auto {
+    @extend .container;
+    height: "auto";
+  }
 }

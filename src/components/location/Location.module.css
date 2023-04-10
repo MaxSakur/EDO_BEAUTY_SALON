@@ -1,4 +1,4 @@
-.container {
+.container, .container_mobile {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -6,19 +6,20 @@
   justify-content: center;
   text-align: center;
   gap: var(--padding-xl);
+  font-size: var(--comment);
 }
-.container .icon svg {
+.container .icon svg, .container_mobile .icon svg {
   height: var(--icon-size);
   width: var(--icon-size);
 }
-.container .icon svg path {
+.container .icon svg path, .container_mobile .icon svg path {
   fill: #fff;
 }
-.container .address {
+.container .address, .container_mobile .address {
   border-bottom: 1px solid var(--accent-color);
   padding-bottom: var(--padding-xl);
+  line-height: 1.6rem;
 }
-.container p {
-  font-size: var(--comment);
-  font-weight: 200;
+.container_mobile {
+  font-size: var(--box_header);
 }/*# sourceMappingURL=Location.module.css.map */

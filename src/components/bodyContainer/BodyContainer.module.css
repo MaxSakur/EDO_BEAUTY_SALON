@@ -1,4 +1,8 @@
-.container {
-  height: calc(100vh - var(--header-size) * 3);
+.container, .container_mobile {
   width: 100%;
+  position: relative;
+  background-color: var(--white);
+}
+.container_mobile {
+  height: calc(100% - var(--header-mobile-size) * 2);
 }/*# sourceMappingURL=BodyContainer.module.css.map */

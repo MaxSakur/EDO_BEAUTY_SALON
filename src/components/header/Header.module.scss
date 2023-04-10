@@ -1,62 +1,63 @@
 .container_fw {
-        height: var(--header-size);
-        display: flex;
-        align-items: center;
-        &::after {
-            content: '';
-            height: var(--header-size);
-            z-index: -1;
-            left: 0;
-            width: 100%;
-            position: absolute;
-            background-color: var(--black);
-        }
-    }
+  width: var(--desktop);
+  height: var(--header-size);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  &::after {
+    content: "";
+    height: var(--header-size);
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: var(--black);
+  }
 
-
-.social {
+  .social {
     flex: 1;
     display: flex;
     gap: var(--padding-xl);
-}
+  }
 
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // MOBILE
+  &_mobile {
+    @extend .container_fw;
+    width: var(--mobile);
+    min-height: var(--header-mobile-size);
+    &::after {
+      height: calc(var(--header-size) / 2);
+    }
+    & .language .current {
+      font-size: var(--box_header);
+    }
+  }
 }
 
 .hoveredIcon {
-    display: flex;
-    justify-content: center;
-    gap: var(--padding-xl);
-    align-items: center;
-    transition: all .5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  gap: var(--padding-xl);
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  & svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    fill: var(--white);
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover {
+    cursor: pointer;
     & svg {
-        height: var(--icon-size);
-        width: var(--icon-size);
-        fill: var(--white);
-        transition: all .5s ease-in-out;
-       @extend .flex-center;
+      fill: var(--accent-color);
     }
-    & .label {
-        color: var(--white);
-        white-space: nowrap;
-        @extend .flex-center;
+  }
+  //   MOBILE
+  &_mobile {
+    @extend .hoveredIcon;
+    & svg {
+      height: calc(var(--icon-size) / 2);
+      width: calc(var(--icon-size) / 2);
     }
-    &:hover {
-        cursor: pointer;
-        & svg {
-            fill: var(--accent-color);
-        }
-    }
-    
-}
-
-.language {
-    & .current {
-        color: var(--white);
-        font-family: FiraSans;
-        font-size: var(--default);
-    }
+  }
 }

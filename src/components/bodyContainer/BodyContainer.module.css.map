@@ -1,1 +1,1 @@
-{"version":3,"sources":["BodyContainer.module.scss","BodyContainer.module.css"],"names":[],"mappings":"AAAA;EACI,4CAAA;EACA,WAAA;ACCJ","file":"BodyContainer.module.css"}
+{"version":3,"sources":["BodyContainer.module.scss","BodyContainer.module.css"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,kBAAA;EACA,8BAAA;ACCF;ADAE;EAEE,kDAAA;ACCJ","file":"BodyContainer.module.css"}

@@ -1,0 +1,13 @@
+.container, .container_mobile {
+  display: grid;
+  gap: var(--padding-md);
+  height: inherit;
+  width: var(--desktop);
+  grid-template-columns: repeat(3, minmax(33%, auto));
+  grid-template-rows: repeat(2, 1fr);
+}
+.container_mobile {
+  width: var(--mobile);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}/*# sourceMappingURL=Container.module.css.map */

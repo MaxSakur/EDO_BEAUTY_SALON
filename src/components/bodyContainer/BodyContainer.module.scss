@@ -1,4 +1,9 @@
 .container {
-    height: calc(100vh - calc(var(--header-size)*3));
-    width: 100%;
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  &_mobile {
+    @extend .container;
+    height: calc(100% - calc(var(--header-mobile-size) * 2));
+  }
 }

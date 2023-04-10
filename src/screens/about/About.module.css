@@ -7,11 +7,17 @@
   gap: 0 var(--padding-md);
   height: 100%;
 }
-.aboutLayout .boxContainer {
+
+.boxContainer {
   display: grid;
   gap: var(--padding-md);
-  height: inherit;
-  width: 100%;
+  height: 100%;
+  width: var(--desktop);
   grid-template-columns: repeat(3, minmax(33%, auto));
   grid-template-rows: repeat(2, 1fr);
+}
+.boxContainer_mobile {
+  width: var(--mobile);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=About.module.css.map */

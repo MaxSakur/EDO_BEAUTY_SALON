@@ -5,27 +5,7 @@
   position: relative;
   z-index: 0;
   gap: 0 var(--padding-md);
-  height: 100%;
-  & .boxContainer {
-    display: grid;
-    gap: var(--padding-md);
-    height: inherit;
-    width: 100%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "A B B" "C B B";
-    & > div {
-      &:nth-child(1) {
-        grid-area: A;
-      }
-      &:nth-child(3) {
-        grid-area: C;
-      }
-      &:nth-child(2) {
-        grid-area: B;
-      }
-    }
-  }
+  min-height: 100%;
 
   & .priceHeader {
     padding: calc(var(--padding-xl) * 1.5) calc(var(--padding-xl));
@@ -59,7 +39,6 @@
       }
     }
   }
-
   & .links {
     display: flex;
     flex-direction: column;
@@ -71,6 +50,57 @@
       }
       &_active {
         color: var(--accent-color);
+      }
+    }
+  }
+}
+
+.boxContainer {
+  display: grid;
+  gap: var(--padding-md);
+  height: inherit;
+  width: var(--desktop);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "A B B" "C B B";
+  & > div {
+    &:nth-child(1) {
+      grid-area: A;
+    }
+    &:nth-child(3) {
+      grid-area: C;
+    }
+    &:nth-child(2) {
+      grid-area: B;
+    }
+  }
+  &_mobile {
+    width: var(--mobile);
+    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "A C" "B B";
+    & .links {
+      padding: calc(var(--padding-xl) * 2) 0;
+      gap: calc(var(--padding-xl) * 1.5);
+      & .link {
+        cursor: pointer;
+        &_text {
+          font-size: var(--comment);
+        }
+      }
+    }
+    & .priceHeader {
+      padding: var(--padding-xl) var(--padding-xl);
+      & .title {
+        font-size: var(--default);
+      }
+    }
+    & .prices {
+      .price {
+        padding: var(--padding-md) 0;
+        & p:first-child {
+          flex: 1;
+        }
       }
     }
   }

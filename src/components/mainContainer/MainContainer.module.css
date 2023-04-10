@@ -1,4 +1,4 @@
-.container {
+.container, .container_auto {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -7,15 +7,6 @@
   justify-content: space-between;
   margin: auto;
 }
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .container {
-    width: 1200px;
-  }
-}
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .container {
-    width: 1200px;
-  }
+.container_auto {
+  height: "auto";
 }/*# sourceMappingURL=MainContainer.module.css.map */

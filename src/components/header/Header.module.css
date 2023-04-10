@@ -1,9 +1,11 @@
-.container_fw {
+.container_fw, .container_fw_mobile {
+  width: var(--desktop);
   height: var(--header-size);
   display: flex;
+  align-self: center;
   align-items: center;
 }
-.container_fw::after {
+.container_fw::after, .container_fw_mobile::after {
   content: "";
   height: var(--header-size);
   z-index: -1;
@@ -12,45 +14,42 @@
   position: absolute;
   background-color: var(--black);
 }
-
-.social {
+.container_fw .social, .container_fw_mobile .social {
   flex: 1;
   display: flex;
   gap: var(--padding-xl);
 }
-
-.flex-center, .hoveredIcon .label, .hoveredIcon svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container_fw_mobile {
+  width: var(--mobile);
+  min-height: var(--header-mobile-size);
+}
+.container_fw_mobile::after {
+  height: calc(var(--header-size) / 2);
+}
+.container_fw_mobile .language .current {
+  font-size: var(--box_header);
 }
 
-.hoveredIcon {
+.hoveredIcon, .hoveredIcon_mobile {
   display: flex;
   justify-content: center;
   gap: var(--padding-xl);
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
-.hoveredIcon svg {
+.hoveredIcon svg, .hoveredIcon_mobile svg {
   height: var(--icon-size);
   width: var(--icon-size);
   fill: var(--white);
   transition: all 0.5s ease-in-out;
 }
-.hoveredIcon .label {
-  color: var(--white);
-  white-space: nowrap;
-}
-.hoveredIcon:hover {
+.hoveredIcon:hover, .hoveredIcon_mobile:hover {
   cursor: pointer;
 }
-.hoveredIcon:hover svg {
+.hoveredIcon:hover svg, .hoveredIcon_mobile:hover svg {
   fill: var(--accent-color);
 }
-
-.language .current {
-  color: var(--white);
-  font-family: FiraSans;
-  font-size: var(--default);
+.hoveredIcon_mobile svg {
+  height: calc(var(--icon-size) / 2);
+  width: calc(var(--icon-size) / 2);
 }/*# sourceMappingURL=Header.module.css.map */

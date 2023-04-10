@@ -14,11 +14,12 @@ export const EN_TRANSLATION_KEYS = {
   },
   main: {
     title: "To main",
+    label: "Move back",
   },
   location: {
     title: "How to get",
     label: "Make a route",
-    address: "Pechersky district, 22/26 Vasylya's Tyutyunnik street",
+    address: "Kyiv, Pechersky district, 22/26 Vasylya's Tyutyunnik street",
     workHours: "09:00 - 21:00",
   },
   shop: {

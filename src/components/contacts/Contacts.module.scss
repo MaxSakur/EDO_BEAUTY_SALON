@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   align-items: center;
-
+  font-size: var(--comment);
   & .icon {
     padding-bottom: var(--padding-xl);
     & svg path {
@@ -33,10 +33,6 @@
         text-decoration: none;
         color: var(--comment);
         font-weight: 500;
-
-        & .phone {
-          font-size: var(--comment);
-        }
       }
     }
   }
@@ -45,5 +41,10 @@
     padding-top: var(--padding-xl);
     display: flex;
     gap: var(--padding-xl);
+  }
+
+  &_mobile {
+    @extend .container;
+    font-size: var(--box_header);
   }
 }

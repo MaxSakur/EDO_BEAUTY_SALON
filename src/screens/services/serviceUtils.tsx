@@ -4,9 +4,11 @@ import cosmethology from "./../../static_data/cosmethology.json";
 import styles from './Services.module.css'
 import { useTranslation } from "react-i18next";
 import { Dispatch, ReactElement, SetStateAction, useState } from "react";
+import i18next from "i18next";
 
 export type Service = {
-    name: string;
+    name_ua: string;
+    name_en: string;
     price: number;
 };
 
@@ -40,13 +42,14 @@ export const PriceHeader = () => {
 
 export const ServicePrice = ({ data }: ServicePriceTypes) => {
     const { t } = useTranslation();
+    const lang = i18next.language
     return (
         <ul className={styles.prices}>
             <PriceHeader />
             {data.map((el, index): ReactElement => {
                 return (
                     <li key={index} className={styles.price}>
-                        <p className={styles.name}>{el.name}</p>
+                        <p className={styles.name}>{lang === 'ua' ? el.name_ua : el.name_en}</p>
                         <p className={styles.value}>{el.price}{' '}{t('currency')}</p>
                     </li>
                 );
@@ -71,7 +74,7 @@ export const ServiceLinks = ({ onChange }: { onChange: Dispatch<SetStateAction<S
         <div className={styles.links}>
             {linkData.map((el, index): ReactElement => {
                 return (
-                    <div key={index} className={isActive(index)} onClick={() => handleChange(el.data, index)}>
+                    <div key={index} className={isActive(index)} onClick={() => handleChange(el.data as Service[], index)}>
                         <p className={styles.link_text}>{t(el.name)}</p>
                     </div>
                 );

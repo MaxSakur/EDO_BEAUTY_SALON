@@ -1,13 +1,14 @@
 import React from "react";
 import { FaTelegram, FaViber } from "react-icons/fa";
-import { GiRotaryPhone } from "react-icons/gi";
 import styles from "./Contacts.module.css";
 import { useTranslation } from "react-i18next";
+import { isMobile } from "react-device-detect";
 
 const Contacts = () => {
   const { t } = useTranslation();
+  const containerStyles = isMobile ? styles.container_mobile : styles.container
   return (
-    <div className={styles.container}>
+    <div className={containerStyles}>
 
       <div className={styles.phones_container}>
 

@@ -1,22 +1,24 @@
-.container {
+.container, .container_mobile {
   display: flex;
   gap: calc(var(--padding-xl) * 2);
 }
-
-.lang, .lang_active {
+.container .lang, .container_mobile .lang, .container .lang_active, .container_mobile .lang_active {
   color: var(--white);
   opacity: 1;
   transition: all 1s ease;
   border-bottom: 1px solid transparent;
-  font-size: 24px;
+  font-size: var(--default);
   text-transform: uppercase;
 }
-.lang:hover, .lang_active:hover {
+.container .lang:hover, .container_mobile .lang:hover, .container .lang_active:hover, .container_mobile .lang_active:hover {
   cursor: pointer;
   color: var(--accent-color);
   opacity: 0.6;
 }
-.lang_active {
+.container .lang_active, .container_mobile .lang_active {
   opacity: 1;
   color: var(--accent-color);
+}
+.container_mobile .lang, .container_mobile .lang_active {
+  font-size: var(--box_header);
 }/*# sourceMappingURL=LanguageToggle.module.css.map */

@@ -1,46 +1,57 @@
 [
   {
-    "name": "Зняття, манікюр, покриття гель-лаком",
+    "name_ua": "Зняття, манікюр, покриття гель-лаком",
+    "name_en": "Removal, manicure, gel polish coating",
     "price": 880
   },
   {
-    "name": "Зняття, педикюр, покриття гель-лаком",
+    "name_ua": "Зняття, педикюр, покриття гель-лаком",
+    "name_en": "Removal, pedicure, gel polish coating",
     "price": 1100
   },
   {
-    "name": "Жіночий манікюр (класичний, європейський, комбінований)",
+    "name_ua": "Жіночий манікюр (класичний, європейський, комбінований)",
+    "name_en": "Women's manicure (classic, European, combined)",
     "price": 385
   },
   {
-    "name": "Жіночий педикюр (класичний, європейський, комбінований)",
+    "name_ua": "Жіночий педикюр (класичний, європейський, комбінований)",
+    "name_en": "Women's pedicure (classic, European, combined)",
     "price": 715
   },
   {
-    "name": "Складний педикюр (тріщини, піднігтьові мозолі, натоптиші)",
+    "name_ua": "Складний педикюр (тріщини, піднігтьові мозолі, натоптиші)",
+    "name_en": "Complex pedicure (cracks, calluses, corns)",
     "price": 990
   },
   {
-    "name": "Покриття лаком",
+    "name_ua": "Покриття лаком",
+    "name_en": "Varnish coating",
     "price": 275
   },
   {
-    "name": "Покриття гель-лаком",
+    "name_ua": "Покриття гель-лаком",
+    "name_en": "Covering with gel varnish",
     "price": 385
   },
   {
-    "name": "Зміцнення нігтьової пластини конструюючим гелем",
+    "name_ua": "Зміцнення нігтьової пластини конструюючим гелем",
+    "name_en": "Strengthening of the nail plate with a construction gel",
     "price": 450
   },
   {
-    "name": "Нарощування нігтів Catherine (без манікюру)",
+    "name_ua": "Нарощування нігтів Catherine (без манікюру)",
+    "name_en": "Catherine nail extension (without manicure)",
     "price": 1500
   },
   {
-    "name": "Чоловічий манікюр",
+    "name_ua": "Чоловічий манікюр",
+    "name_en": "Men's manicure",
     "price": 500
   },
   {
-    "name": "Чоловічий педикюр",
+    "name_ua": "Чоловічий педикюр",
+    "name_en": "Men's pedicure",
     "price": 825
   }
 ]

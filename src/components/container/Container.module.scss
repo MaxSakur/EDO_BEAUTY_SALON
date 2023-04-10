@@ -1,23 +1,15 @@
-.aboutLayout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 0;
-  gap: 0 var(--padding-md);
-  height: 100%;
-}
-
-.boxContainer {
+.container {
   display: grid;
   gap: var(--padding-md);
-  height: 100%;
+  height: inherit;
   width: var(--desktop);
   grid-template-columns: repeat(3, minmax(33%, auto));
   grid-template-rows: repeat(2, 1fr);
+
   &_mobile {
+    @extend .container;
     width: var(--mobile);
-    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }

@@ -1,6 +1,19 @@
 * {
   font-family: Comfortaa;
 }
+div#root {
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+div#root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--black);
+  height: 100%;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -24,19 +37,25 @@ p {
   --white: #fff;
   --lightgrey: #f4f0f0;
 
+  /* SCREEN MAX WIDTH */
+  --desktop: 1280px;
+  --tablet: 560px;
+  --mobile: 360px;
+
   /* SIZE CONSTS  */
   --icon-size: 2.2rem;
   --header-size: 80px;
+  --header-mobile-size: calc(var(--header-size) / 2);
 
   /* FONT SIZE */
   --box_header: 14px;
   --comment: 18px;
   --default: 24px;
-  --label: 1.5em;
+  --label: 32px;
 
   /* PADDINGS */
   --padding-sm: 4px;
   --padding-md: 8px;
   --padding-lg: 12px;
-  --padding-xl: 16px;
+  --padding-xl: 18px;
 }

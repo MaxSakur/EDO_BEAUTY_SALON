@@ -112,6 +112,25 @@
       fill: var(--accent-color);
     }
   }
+
+  &_mobile {
+    @extend .block;
+    & .content {
+      & .text {
+        font-size: var(--comment);
+      }
+      & .label {
+        font-size: var(--comment);
+      }
+    }
+    & .icon {
+      top: 50%;
+      & svg {
+        height: calc(var(--icon-size) / 2);
+        width: calc(var(--icon-size) / 2);
+      }
+    }
+  }
 }
 
 .block_custom {

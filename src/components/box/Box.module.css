@@ -1,4 +1,4 @@
-.block, .block_custom {
+.block, .block_custom, .block_mobile {
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
   color: #fff;
 }
-.block .externalLink, .block_custom .externalLink {
+.block .externalLink, .block_custom .externalLink, .block_mobile .externalLink {
   position: absolute;
   z-index: 5;
   left: 0;
@@ -18,7 +18,7 @@
   width: 100%;
   height: 100%;
 }
-.block .bg, .block_custom .bg {
+.block .bg, .block_custom .bg, .block_mobile .bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -32,7 +32,7 @@
   z-index: 0;
   transition: all 0.5s ease-in-out;
 }
-.block .overlay, .block_custom .overlay {
+.block .overlay, .block_custom .overlay, .block_mobile .overlay {
   border: 4px solid transparent;
   box-sizing: border-box;
   position: absolute;
@@ -44,7 +44,7 @@
   transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.block .icon, .block_custom .icon {
+.block .icon, .block_custom .icon, .block_mobile .icon {
   position: absolute;
   padding: var(--padding-md);
   border-radius: 100%;
@@ -52,12 +52,12 @@
   top: calc(50% + var(--icon-size));
   transition: all 0.5s ease-in-out;
 }
-.block .icon svg, .block_custom .icon svg {
+.block .icon svg, .block_custom .icon svg, .block_mobile .icon svg {
   fill: var(--white);
   height: var(--icon-size);
   width: var(--icon-size);
 }
-.block .content, .block_custom .content {
+.block .content, .block_custom .content, .block_mobile .content {
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
   height: 100%;
   transition: all 0.5s ease-in-out;
 }
-.block .content .text, .block_custom .content .text {
+.block .content .text, .block_custom .content .text, .block_mobile .content .text {
   position: absolute;
   left: 0;
   width: 100%;
@@ -75,7 +75,7 @@
   font-size: var(--label);
   text-align: center;
 }
-.block .content .label, .block_custom .content .label {
+.block .content .label, .block_custom .content .label, .block_mobile .content .label {
   color: #fff;
   transition: all 0.5s ease-in-out;
   flex-direction: column;
@@ -86,27 +86,40 @@
   text-align: center;
   bottom: -50%;
 }
-.block:hover .overlay, .block_custom:hover .overlay {
+.block:hover .overlay, .block_custom:hover .overlay, .block_mobile:hover .overlay {
   border-color: var(--accent-color);
 }
-.block:hover > .bg, .block_custom:hover > .bg {
+.block:hover > .bg, .block_custom:hover > .bg, .block_mobile:hover > .bg {
   transform: scale(1.1);
 }
-.block:hover > .overlay, .block_custom:hover > .overlay {
+.block:hover > .overlay, .block_custom:hover > .overlay, .block_mobile:hover > .overlay {
   background-color: rgba(0, 0, 0, 0.9);
 }
-.block:hover > .content .text, .block_custom:hover > .content .text {
+.block:hover > .content .text, .block_custom:hover > .content .text, .block_mobile:hover > .content .text {
   top: 20px;
 }
-.block:hover > .content .label, .block_custom:hover > .content .label {
+.block:hover > .content .label, .block_custom:hover > .content .label, .block_mobile:hover > .content .label {
   bottom: 5%;
 }
-.block:hover > .icon, .block_custom:hover > .icon {
+.block:hover > .icon, .block_custom:hover > .icon, .block_mobile:hover > .icon {
   top: calc(50% - var(--icon-size));
   border-color: var(--accent-color);
 }
-.block:hover > .icon svg, .block_custom:hover > .icon svg {
+.block:hover > .icon svg, .block_custom:hover > .icon svg, .block_mobile:hover > .icon svg {
   fill: var(--accent-color);
+}
+.block_mobile .content .text {
+  font-size: var(--comment);
+}
+.block_mobile .content .label {
+  font-size: var(--comment);
+}
+.block_mobile .icon {
+  top: 50%;
+}
+.block_mobile .icon svg {
+  height: calc(var(--icon-size) / 2);
+  width: calc(var(--icon-size) / 2);
 }
 
 .block_custom {

@@ -1,4 +1,4 @@
-.container {
+.container, .container_mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,11 +6,14 @@
   height: inherit;
   position: relative;
 }
-.container .logo {
-  height: 80%;
+.container .logo, .container_mobile .logo {
+  height: 30vh;
 }
-.container .brand {
+.container .brand, .container_mobile .brand {
   color: #000;
-  font-size: 32px;
+  font-size: var(--label);
   font-family: AlexBrush;
+}
+.container_mobile .logo {
+  height: 20vh;
 }/*# sourceMappingURL=Brand.module.css.map */

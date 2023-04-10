@@ -6,6 +6,7 @@
   justify-content: center;
   text-align: center;
   gap: var(--padding-xl);
+  font-size: var(--comment);
   & .icon {
     & svg {
       height: var(--icon-size);
@@ -18,9 +19,11 @@
   & .address {
     border-bottom: 1px solid var(--accent-color);
     padding-bottom: var(--padding-xl);
+    line-height: 1.6rem;
   }
-  & p {
-    font-size: var(--comment);
-    font-weight: 200;
+
+  &_mobile {
+    @extend .container;
+    font-size: var(--box_header);
   }
 }

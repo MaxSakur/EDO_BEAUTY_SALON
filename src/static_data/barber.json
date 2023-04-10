@@ -1,42 +1,52 @@
 [
   {
-    "name": "Стрижка жіноча",
+    "name_ua": "Стрижка жіноча",
+    "name_en": "Women's haircut",
     "price": 715
   },
   {
-    "name": "Укладання волосся на браш",
+    "name_ua": "Укладання волосся на браш",
+    "name_en": "Brushing hair",
     "price": 495
   },
   {
-    "name": "Фарбування – середня довжина волосся",
+    "name_ua": "Фарбування – середня довжина волосся",
+    "name_en": "Dyeing – medium hair length",
     "price": 2640
   },
   {
-    "name": "Тонування-середня довжина волосся",
+    "name_ua": "Тонування-середня довжина волосся",
+    "name_en": "Toning - medium hair length",
     "price": 2200
   },
   {
-    "name": "AirTouch – середня довжина волосся",
+    "name_ua": "AirTouch – середня довжина волосся",
+    "name_en": "AirTouch - medium hair length",
     "price": 4400
   },
   {
-    "name": "Абсолютне щастя для волосся від LEBEL",
+    "name_ua": "Абсолютне щастя для волосся від LEBEL",
+    "name_en": "Absolute happiness for hair from LEBEL",
     "price": 2365
   },
   {
-    "name": "Чоловіча стрижка будь-якої складності",
+    "name_ua": "Чоловіча стрижка будь-якої складності",
+    "name_en": "Men's haircut of any complexity",
     "price": 600
   },
   {
-    "name": "Чоловіча стрижка та моделювання бороди",
+    "name_ua": "Чоловіча стрижка та моделювання бороди",
+    "name_en": "Men's haircut and beard modeling",
     "price": 385
   },
   {
-    "name": "Чоловіча стрижка, камуфлювання сивини",
+    "name_ua": "Чоловіча стрижка, камуфлювання сивини",
+    "name_en": "Men's haircut, gray hair camouflage",
     "price": 1100
   },
   {
-    "name": "Камуфлювання сивини",
+    "name_ua": "Камуфлювання сивини",
+    "name_en": "Gray hair camouflage",
     "price": 650
   }
 ]
