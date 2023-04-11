@@ -4,8 +4,8 @@
   align-items: center;
   position: relative;
   z-index: 0;
+  height: 100%;
   gap: 0 var(--padding-md);
-  min-height: 100%;
 
   & .priceHeader {
     padding: calc(var(--padding-xl) * 1.5) calc(var(--padding-xl));
@@ -53,6 +53,11 @@
       }
     }
   }
+  &_mobile {
+    @extend .serviceLayout;
+    padding: var(--padding-md) 0;
+    align-items: flex-start;
+  }
 }
 
 .boxContainer {
@@ -97,9 +102,10 @@
     }
     & .prices {
       .price {
-        padding: var(--padding-md) 0;
+        padding: var(--padding-md);
         & p:first-child {
           flex: 1;
+          padding-right: var(--padding-xl);
         }
       }
     }

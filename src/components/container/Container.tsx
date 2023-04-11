@@ -1,5 +1,5 @@
 import React, { CSSProperties, MouseEventHandler, ReactElement } from 'react';
-import { isMobile, isBrowser, useMobileOrientation } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 import { useTranslation } from 'react-i18next';
 import { AboutBoxList } from '../../screens/about/About';
 import { classNames } from '../../utils';
@@ -10,9 +10,9 @@ import styles from './Container.module.css';
 const Container = ({ data, customStyles, mobileStyles }: { data: AboutBoxList[], customStyles?: string | CSSProperties, mobileStyles?: string | CSSProperties }) => {
     // const { isLandscape } = useMobileOrientation()
     const { t } = useTranslation();
-
+    const constainerStyles = classNames(styles.container, customStyles && customStyles, isMobile && mobileStyles)
     return (
-        <div className={classNames(styles.container, customStyles && customStyles, isMobile && mobileStyles)}>
+        <div className={constainerStyles}>
             {data.map((el, index) => {
                 return (
                     <Box

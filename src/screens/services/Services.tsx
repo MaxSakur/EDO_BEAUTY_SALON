@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import barberList from "./../../static_data/barber.json";
 import { Service, ServiceLinks, ServicePrice } from "./serviceUtils";
 import styles from "./Services.module.css";
+import { isMobile } from "react-device-detect";
 
 
 export default function Services() {
@@ -19,7 +20,7 @@ export default function Services() {
   ]
 
   return (
-    <div className={styles.serviceLayout}>
+    <div className={isMobile ? styles.serviceLayout_mobile : styles.serviceLayout}>
       <Container data={data} customStyles={styles.boxContainer} mobileStyles={styles.boxContainer_mobile} />
     </div>
   );

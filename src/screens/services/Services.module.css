@@ -1,51 +1,55 @@
-.serviceLayout {
+.serviceLayout, .serviceLayout_mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 0;
+  height: 100%;
   gap: 0 var(--padding-md);
-  min-height: 100%;
 }
-.serviceLayout .priceHeader {
+.serviceLayout .priceHeader, .serviceLayout_mobile .priceHeader {
   padding: calc(var(--padding-xl) * 1.5) calc(var(--padding-xl));
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0.5) 40%, rgb(255, 255, 255) 100%);
   margin-bottom: var(--padding-xl);
 }
-.serviceLayout .priceHeader .title {
+.serviceLayout .priceHeader .title, .serviceLayout_mobile .priceHeader .title {
   color: var(--white);
   font-size: var(--label);
 }
-.serviceLayout .prices {
+.serviceLayout .prices, .serviceLayout_mobile .prices {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
 }
-.serviceLayout .prices .price {
+.serviceLayout .prices .price, .serviceLayout_mobile .prices .price {
   display: flex;
   color: var(--black);
   padding: var(--padding-md) var(--padding-xl);
   border-bottom: 1px solid var(--lightgrey);
   justify-content: space-between;
 }
-.serviceLayout .prices .price:last-child {
+.serviceLayout .prices .price:last-child, .serviceLayout_mobile .prices .price:last-child {
   border-bottom: none;
 }
-.serviceLayout .links {
+.serviceLayout .links, .serviceLayout_mobile .links {
   display: flex;
   flex-direction: column;
   gap: var(--padding-xl);
 }
-.serviceLayout .links .link {
+.serviceLayout .links .link, .serviceLayout_mobile .links .link {
   cursor: pointer;
 }
-.serviceLayout .links .link_text {
+.serviceLayout .links .link_text, .serviceLayout_mobile .links .link_text {
   font-size: 24px;
 }
-.serviceLayout .links .link_active {
+.serviceLayout .links .link_active, .serviceLayout_mobile .links .link_active {
   color: var(--accent-color);
+}
+.serviceLayout_mobile {
+  padding: var(--padding-md) 0;
+  align-items: flex-start;
 }
 
 .boxContainer {
@@ -89,8 +93,9 @@
   font-size: var(--default);
 }
 .boxContainer_mobile .prices .price {
-  padding: var(--padding-md) 0;
+  padding: var(--padding-md);
 }
 .boxContainer_mobile .prices .price p:first-child {
   flex: 1;
+  padding-right: var(--padding-xl);
 }/*# sourceMappingURL=Services.module.css.map */

@@ -9,6 +9,7 @@
   &_mobile {
     @extend .container;
     width: var(--mobile);
+    height: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }

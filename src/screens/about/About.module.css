@@ -1,4 +1,4 @@
-.aboutLayout {
+.aboutLayout, .aboutLayout_mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,6 +6,9 @@
   z-index: 0;
   gap: 0 var(--padding-md);
   height: 100%;
+}
+.aboutLayout_mobile {
+  padding: var(--padding-md) 0;
 }
 
 .boxContainer {

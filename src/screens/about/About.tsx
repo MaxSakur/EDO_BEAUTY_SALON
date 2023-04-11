@@ -9,6 +9,7 @@ import Brand from "./parts/brand/Brand";
 import Location from "../../components/location";
 import Container from "../../components/container";
 import styles from "./About.module.css";
+import { isMobile } from "react-device-detect";
 
 
 export type AboutBoxList = {
@@ -38,7 +39,7 @@ export default function About() {
   ]
 
   return (
-    <div className={styles.aboutLayout}>
+    <div className={isMobile ? styles.aboutLayout_mobile : styles.aboutLayout}>
       <Container data={data} customStyles={styles.boxContainer} mobileStyles={styles.boxContainer_mobile} />
       <SliderModal
         isShown={sliderModalShown}

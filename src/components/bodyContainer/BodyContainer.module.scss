@@ -1,7 +1,11 @@
 .container {
-  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: var(--white);
+  padding: var(--padding-xl) 0;
   &_mobile {
     @extend .container;
     height: calc(100% - calc(var(--header-mobile-size) * 2));
