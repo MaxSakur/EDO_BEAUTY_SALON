@@ -81,9 +81,14 @@
   }
   &_mobile {
     width: var(--mobile);
-    grid-template-rows: 1fr auto;
+    grid-template-rows: min-content min-content;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "A C" "B B";
+    & > div {
+      &:nth-child(2) {
+        max-height: min-content;
+      }
+    }
     & .links {
       padding: calc(var(--padding-xl) * 2) 0;
       gap: calc(var(--padding-xl) * 1.5);
@@ -95,10 +100,13 @@
       }
     }
     & .priceHeader {
-      padding: var(--padding-xl) var(--padding-xl);
+      padding: var(--padding-md);
       & .title {
         font-size: var(--default);
       }
+    }
+    & .price_list {
+      overflow: scroll;
     }
     & .prices {
       .price {

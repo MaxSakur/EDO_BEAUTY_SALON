@@ -12,12 +12,9 @@ export type Service = {
     price: number;
 };
 
-
-
 type ServicePriceTypes = {
     data: Service[]
 }
-
 
 const linkData = [
     { name: 'barber.title', data: barberList },
@@ -28,13 +25,11 @@ const linkData = [
 
 export const PriceHeader = () => {
     const { t } = useTranslation();
+
     return (
         <div className={styles.priceHeader}>
             <div className={styles.title}>
                 <p>{t('services.title')}</p>
-            </div>
-            <div>
-                <p></p>
             </div>
         </div>
     )
@@ -44,17 +39,20 @@ export const ServicePrice = ({ data }: ServicePriceTypes) => {
     const { t } = useTranslation();
     const lang = i18next.language
     return (
-        <ul className={styles.prices}>
+        <div className={styles.prices}>
             <PriceHeader />
-            {data.map((el, index): ReactElement => {
-                return (
-                    <li key={index} className={styles.price}>
-                        <p className={styles.name}>{lang === 'ua' ? el.name_ua : el.name_en}</p>
-                        <p className={styles.value}>{el.price}{' '}{t('currency')}</p>
-                    </li>
-                );
-            })}
-        </ul>
+            <ul className={styles.price_list}>
+                {data.map((el, index): ReactElement => {
+                    return (
+                        <li key={index} className={styles.price}>
+                            <p className={styles.name}>{lang === 'ua' ? el.name_ua : el.name_en}</p>
+                            <p className={styles.value}>{el.price}{' '}{t('currency')}</p>
+                        </li>
+                    );
+                })}
+            </ul>
+
+        </div>
     )
 }
 
