@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EDO_BEAUTY_SALON/static/css/main.38986a27.css",
-    "main.js": "/EDO_BEAUTY_SALON/static/js/main.e4da5353.js",
+    "main.css": "/EDO_BEAUTY_SALON/static/css/main.5d63fdf4.css",
+    "main.js": "/EDO_BEAUTY_SALON/static/js/main.3ece0e2f.js",
     "static/js/787.be0f631c.chunk.js": "/EDO_BEAUTY_SALON/static/js/787.be0f631c.chunk.js",
     "static/media/2-min.jpg": "/EDO_BEAUTY_SALON/static/media/2-min.954b94be2fef961c0aa0.jpg",
     "static/media/3-min.jpg": "/EDO_BEAUTY_SALON/static/media/3-min.34a806c69b0ad6988b83.jpg",
@@ -22,12 +22,12 @@
     "static/media/AlexBrush-Regular.ttf": "/EDO_BEAUTY_SALON/static/media/AlexBrush-Regular.2931994a26f7d46dab66.ttf",
     "static/media/logo.png": "/EDO_BEAUTY_SALON/static/media/logo.faaf809213b967d1a167.png",
     "index.html": "/EDO_BEAUTY_SALON/index.html",
-    "main.38986a27.css.map": "/EDO_BEAUTY_SALON/static/css/main.38986a27.css.map",
-    "main.e4da5353.js.map": "/EDO_BEAUTY_SALON/static/js/main.e4da5353.js.map",
+    "main.5d63fdf4.css.map": "/EDO_BEAUTY_SALON/static/css/main.5d63fdf4.css.map",
+    "main.3ece0e2f.js.map": "/EDO_BEAUTY_SALON/static/js/main.3ece0e2f.js.map",
     "787.be0f631c.chunk.js.map": "/EDO_BEAUTY_SALON/static/js/787.be0f631c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38986a27.css",
-    "static/js/main.e4da5353.js"
+    "static/css/main.5d63fdf4.css",
+    "static/js/main.3ece0e2f.js"
   ]
 }
